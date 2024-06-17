@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+}
+
+@keyframes menuDrop {
+    0%{
+        bottom:72px;
+        
+    }
+}
+
+.container div {
+    display: inline-block;
+}
+
+div.menu-container{
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav.menu-dropdown {
+    position: relative;
+    top:0;
+    left: 0;
+    width: 120px;
+    height: 72px;
+    overflow: hidden;
+}
+
+button {
+    z-index: 10;
+    width: 120px;
+    height: 30px;
+    display: block;
+    text-align:center;
+    background-color:blueviolet;
+    border-style: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* transition-property:border-bottom-left-radius border-bottom-right-radius; */
+    /* transition-delay: 0.4s;  */
+     /* transition-duration: 0.1s; */
+    /* transition-timing-function: ease-in-out; */
+}
+
+ul {
+    position: absolute;
+    width: 120px;
+    bottom:72px;
+    border-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /* transition-delay: 0.25s; */
+    transition-property: bottom;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+    background-color:blueviolet;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+li {
+    text-align: center;
+}
+/* button.visible{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+} */
+ul.visible {
+    bottom: 0;
+}
