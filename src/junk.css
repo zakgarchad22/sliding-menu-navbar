@@ -27,7 +27,7 @@ div.menu-container {
     height: calc(var(--list-height) + var(--navbar-height) - var(--border-radius));
 }
 
-nav.menu-dropdown {
+div.menu-dropdown {
     left: 0;
     overflow: hidden;
     position: relative;
