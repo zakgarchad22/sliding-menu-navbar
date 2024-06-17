@@ -13,7 +13,6 @@
 
 function showMenu(evt) {
     const menuHeading = evt.target;
-    console.log({ menuHeading: menuHeading });
     menuHeading.removeEventListener("pointerover", showMenu);
 
     const menu = evt.target.parentElement;
