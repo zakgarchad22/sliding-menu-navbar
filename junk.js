@@ -17,10 +17,10 @@ function showMenu(evt) {
         menuItems.classList.add("visible");
     }
 
-    if (!menuHeading.classList.contains("visible")) {
-        menuHeading.classList.add("visible");
-        // menuHeading.setAttribute("pointer-events", "none");
-    }
+    // if (!menuHeading.classList.contains("visible")) {
+    //     menuHeading.classList.add("visible");
+    //     // menuHeading.setAttribute("pointer-events", "none");
+    // }
 }
 
 function hideMenu(evt) {
@@ -40,10 +40,10 @@ function hideMenu(evt) {
         const menuHeading = menu.querySelector("button");
         menuHeading.addEventListener("pointerover", showMenu);
 
-        if (menuHeading.classList.contains("visible")) {
-            menuHeading.classList.remove("visible");
-            // menuHeading.setAttribute("pointer-events", "auto");
-        }
+        // if (menuHeading.classList.contains("visible")) {
+        //     menuHeading.classList.remove("visible");
+        //     // menuHeading.setAttribute("pointer-events", "auto");
+        // }
 
         const menuItems = menu.querySelector("ul");
         if (menuItems.classList.contains("visible")) {
