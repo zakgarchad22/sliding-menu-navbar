@@ -12,6 +12,7 @@
 
 
 function showMenu(evt) {
+    
     const menuHeading = evt.target;
     menuHeading.removeEventListener("pointerover", showMenu);
 

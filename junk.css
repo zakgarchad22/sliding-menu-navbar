@@ -41,6 +41,9 @@ button {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+button:hover{
+    filter: brightness(80%);
+}
 
 ul {
     position: absolute;
@@ -66,4 +69,13 @@ li {
 
 ul.visible {
     bottom: 0;
+}
+
+li:hover {
+    filter: brightness(80%);
+}
+
+a {
+    text-decoration: none;
+    color: ivory;
 }
