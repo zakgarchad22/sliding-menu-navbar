@@ -21,6 +21,7 @@ div.menu-container {
     --menu-width: 120px;
 
     position: relative;
+    vertical-align: top;
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     height: calc(var(--list-height) + var(--navbar-height) - var(--border-radius));
@@ -32,7 +33,7 @@ nav.menu-dropdown {
     position: relative;
     width: var(--menu-width);
     height: var(--list-height);
-    top: calc(var(--navbar-height)- var(--border-radius));
+    top: calc(var(--navbar-height) - var(--border-radius));
 }
 
 button {

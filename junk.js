@@ -47,6 +47,14 @@ function hideMenu(evt) {
     }
 }
 
+const menus = document.querySelectorAll("div.menu-container");
+
+for(const menu of menus){
+    const list = menu.querySelector("ul");
+    const height = list.offsetHeight;
+    menu.style.setProperty("--list-height", `${height}px`);
+}
+
 const buttons = document.querySelectorAll("button");
 for (const button of buttons) {
     button.addEventListener("pointerover", showMenu);
