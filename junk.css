@@ -14,53 +14,59 @@ body {
 }
 
 div.menu-container {
+
+    --border-radius: 10px;
+    --navbar-height: 30px;
+    --list-height: 82px;
+    --menu-width: 120px;
+
     position: relative;
-    height: 102px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    height: calc(var(--list-height) + var(--navbar-height) - var(--border-radius));
 }
 
 nav.menu-dropdown {
-    position: relative;
-    top: 20px;
     left: 0;
-    width: 120px;
-    height: 82px;
     overflow: hidden;
+    position: relative;
+    width: var(--menu-width);
+    height: var(--list-height);
+    top: calc(var(--navbar-height)- var(--border-radius));
 }
 
 button {
     position: absolute;
     z-index: 10;
-    width: 120px;
-    height: 30px;
+    width: var(--menu-width);
+    height: var(--navbar-height);
     display: block;
     text-align: center;
     background-color: blueviolet;
     border-style: none;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
 }
-button:hover{
+
+button:hover {
     filter: brightness(80%);
 }
 
 ul {
     position: absolute;
-    z-index: 9;
     margin: 0;
-    width: 120px;
-    bottom: 82px;
+    padding: 0;
+    padding-top: var(--border-radius);
+    width: var(--menu-width);
+    bottom: var(--list-height);
     border-style: none;
     list-style-type: none;
-    padding: 0;
-    padding-top: 10px;
-    transition-property: bottom;
     transition-duration: 400ms;
+    transition-property: bottom;
     transition-timing-function: ease-in-out;
     background-color: blueviolet;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
 }
 
 li {
