@@ -20,7 +20,7 @@ div.menu-container {
     --border-radius: 10px;
     --navbar-height: 30px;
     --list-height: 82px;
-    --menu-width: 120px;
+    --menu-width: 230px;
 
     position: relative;
     vertical-align: top;
@@ -41,25 +41,32 @@ div.menu-dropdown {
 button {
     position: absolute;
     z-index: 10;
+    width: 230px; 
+    height: 390px;
     width: var(--menu-width);
     height: var(--navbar-height);
     display: block;
     text-align: center;
-    background-color: blueviolet;
+    background-color: #66B750;
+    font-family: 'EraserDust', sans-serif;
     border-style: none;
+    font-size: 28px;
+    color: #FFFEEF;
+    letter-spacing: 1.12px;
     border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);    
+    padding-bottom: 40px;
 }
 
 button:hover {
-    filter: brightness(80%);
+    filter: brightness(95%);
 }
 
 ul {
     position: absolute;
     margin: 0;
     padding: 0;
-    padding-top: var(--border-radius);
+    padding-top: 45px;
     width: var(--menu-width);
     bottom: var(--list-height);
     border-style: none;
@@ -67,21 +74,32 @@ ul {
     transition-duration: 400ms;
     transition-property: bottom;
     transition-timing-function: ease-in-out;
-    background-color: blueviolet;
+    background-color: #66B750;
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
 }
 
 li {
+    font-family: 'EraserDust', sans-serif; 
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: normal; 
+    letter-spacing: 1.12px;
+    color: #FFFEEF; 
     text-align: center;
+    margin-bottom: 55px; 
+    opacity: 1;
 }
 
+li:last-child {
+    margin-bottom: 20;
+}
 ul.visible {
     bottom: 0;
 }
 
 li:hover {
-    filter: brightness(80%);
+    filter: brightness(92%);
 }
 
 a {

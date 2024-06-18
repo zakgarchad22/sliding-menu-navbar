@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="junk.css" />
-  </head>
-  <body>
+    <title>Interactive Dropdown Menu</title>
+    <link rel="stylesheet" type="text/css" href="junk.css" />
+</head>
+<body>
     <nav class="navbar-container">
-      
-      <div class="menu-container">
-        <button>Menu 1</button>
-        <nav class="menu-dropdown">
-          <ul id="ul1">
-            <li><a href="#" onclick="alert('Number 1')"><em>Number 1</em></a></li>
-            <li><a href="#" onclick="alert('Number 2')"><em>Number 2</em></a></li>
-            <li><a href="#" onclick="alert('Number 3')"><em>Number 3</em></a></li>
-            <li><a href="#" onclick="alert('Number 4')"><em>Number 4</em></a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="menu-container">
-        <button>Menu 2</button>
-        <nav class="menu-dropdown">
-          <ul id="ul2">
-            <li><a href="#" onclick="alert('Number 1')">Number 1</a></li>
-            <li><a href="#" onclick="alert('Number 2')">Number 2</a></li>
-            <li><a href="#" onclick="alert('Number 3')">Number 3</a></li>
-            <li><a href="#" onclick="alert('Number 4')">Number 4</a></li>
-            <li><a href="#" onclick="alert('Number 5')">Number 5</a></li>
-            <li><a href="#" onclick="alert('Number 6')">Number 6</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="menu-container">
+            <button class="menu-button">Level1</button>
+            <nav class="menu-dropdown">
+                <ul>
+                    <li><a href="#" onclick="alert('Addition')">Addition</a></li>
+                    <li><a href="#" onclick="alert('Subtraction')">Subtraction</a></li>
+                    <li><a href="#" onclick="alert('Multiplication')">Multiplication</a></li>
+                    <li><a href="#" onclick="alert('Division')">Division</a></li>
+                </ul>
+            </nav>
+        </div>
     </nav>
     <script src="junk.js"></script>
-  </body>
+</body>
 </html>
