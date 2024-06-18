@@ -85,7 +85,7 @@ function MenuDropdown({ items }) {
     </div>
 }
 export function Navbar({ menuConfig }) {
-    return <nav className="container">
+    return <nav className="navbar-container">
         {menuConfig.map((menu, index) => (
             <Menu key={index} menu={menu}></Menu>
         ))}
